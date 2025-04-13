@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irfan Abdurrahman | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Background Circle Blur -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+
+    <nav class="navbar">
+      <div class="logo">Erpan</div>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="portofolio-prj.html">Portofolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="intro-container">
+      <div class="content">
+        <h1 class="title">
+          Hello, I'm <br />
+          <span class="typing">Irfan Abdurrahman</span>
+        </h1>
+        <p>
+          Saya adalah seorang mahasiswa Sistem Informasi yang <br />
+          tertarik dalam bidang Graphic Design, Motion Design, dan <br />
+          pengembangan Front-End. Saya berfokus pada menciptakan <br />
+          pengalaman digital yang menarik dan selalu berusaha <br />
+          memberikan solusi terbaik dalam setiap project.
+        </p>
+
+        <a href="portofolio-prj.html" class="btn-project">
+          <i class="fas fa-code"></i>
+          <span>View Projects</span>
+        </a>
+
+        <div class="stat-row">
+          <!-- Total Projects Card -->
+          <a href="portofolio-prj.html" class="stat-box-link">
+            <div class="stat-box">
+              <div class="icon-wrapper">
+                <img src="img/intro/code.svg" alt="Projects" />
+              </div>
+              <div class="stat-info">
+                <p class="stat-label"><strong>TOTAL PROJECTS</strong></p>
+                <div class="stat-number">01</div>
+              </div>
+              <div class="arrow-icon">↗</div>
+            </div>
+          </a>
+
+          <!-- Certificates Card -->
+          <a href="portofolio-srtf.html" class="stat-box-link">
+            <div class="stat-box">
+              <div class="icon-wrapper">
+                <img src="img/home/sertificate.svg" alt="Certificates" />
+              </div>
+              <div class="stat-info">
+                <p class="stat-label"><strong>CERTIFICATES</strong></p>
+                <div class="stat-number">01</div>
+              </div>
+              <div class="arrow-icon">↗</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div class="image-wrapper">
+        <img src="img/home/bebas.svg" alt="Formal" class="image show" />
+        <img src="img/home/formal.svg" alt="Bebas" class="image" />
+      </div>     -->
+
+      <div class="image-wrapper-css">
+        <img src="img/home/formal.svg" class="image-css" />
+        <img src="img/home/bebas.svg" class="image-css" />
+      </div>
+    </section>
+
+    <script>
+      // Cek apakah ini adalah refresh
+      if (performance.navigation.type === 1) {
+        // Tandai bahwa ini dari refresh dan mau lihat intro lagi
+        sessionStorage.setItem("refreshRedirect", "true");
+        window.location.href = "index.html";
+      }
+    </script>
+    
+  </body>
+</html>
